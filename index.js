@@ -27,6 +27,7 @@ async function updateIPTV() {
             }, { merge: true });
         });
 
+        // ဤနေရာတွင် ဖိုင်ကို သိမ်းဆည်းခြင်း ဖြစ်သည်
         fs.writeFileSync('playlist.m3u', m3uContent);
         await batch.commit();
         
