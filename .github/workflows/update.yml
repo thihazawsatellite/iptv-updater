@@ -19,22 +19,15 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Run Update Script
+        run: |
+          npm install axios
+          node index.js
 
-      - name: Run update script
-        run: node index.js
-
-      - name: Commit and Push M3U file
+      - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          # playlist.m3u ရှိမရှိ အရင်စစ်ပြီးမှ add လုပ်မယ်
-          if [ -f playlist.m3u ]; then
-            git add playlist.m3u
-            git commit -m "Auto Update Playlist" || echo "No changes to commit"
-            git push
-          else
-            echo "Error: playlist.m3u not found!"
-            exit 1
-          fi
+          git add -A
+          git commit -m "Auto Update Playlist" || echo "No changes"
+          git push
