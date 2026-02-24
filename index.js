@@ -49,17 +49,17 @@ async function scrapeLinks() {
     for (const ch of channels) {
         try {
             const response = await axios.get(ch.url, {
-                headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124' }
+                headers: { 'User-Agent': 'Mozilla/5.0' }
             });
             const match = response.data.match(/var kodk="(.*?)";/);
             if (match && match[1]) {
                 const streamLink = "http://oxax.tv/" + match[1];
-                m3uContent += "#EXTINF:-1 tvg-name=\"" + ch.name + "\"," + ch.name + "\n" + streamLink + "\n";
-                console.log("✅ Fetched: " + ch.name);
+                // Player က သိအောင် User-Agent နဲ့ Referer ပါ တစ်ခါတည်း တွဲထည့်မယ်
+                m3uContent += "#EXTINF:-1 tvg-name=\"" + ch.name + "\"," + ch.name + "|http-user-agent=Mozilla/5.0&http-referer=http://oxax.tv/\n" + streamLink + "\n";
             }
-        } catch (e) { console.log("❌ Error on: " + ch.name); }
+        } catch (e) { }
     }
     fs.writeFileSync('playlist.m3u', m3uContent);
-    console.log("Success: All channels updated in playlist.m3u");
+    console.log("Updated with headers for video loading!");
 }
 scrapeLinks();
