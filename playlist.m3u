@@ -1,33 +1,9 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="Oh Ah",Oh Ah
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referer=http://oxax.tv/
-https://s.oxax.tv/1/index.m3u8?k=1771964983p76i611i451i86S|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&Referer=http://oxax.tv/
-#EXTINF:-1 tvg-name="SL Hot 1",SL Hot 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referer=http://oxax.tv/
-https://s.oxax.tv/59/index.m3u8?k=1771964983p76i611i451i86S|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&Referer=http://oxax.tv/
-#EXTINF:-1 tvg-name="SL Hot 2",SL Hot 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referer=http://oxax.tv/
-https://s.oxax.tv/58/index.m3u8?k=1771964983p76i611i451i86S|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&Referer=http://oxax.tv/
-#EXTINF:-1 tvg-name="Brazzers TV Europe",Brazzers TV Europe
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referer=http://oxax.tv/
-https://s.oxax.tv/2/index.m3u8?k=1771964983p76i611i451i86S|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&Referer=http://oxax.tv/
-#EXTINF:-1 tvg-name="Brazzers TV",Brazzers TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referer=http://oxax.tv/
-https://s.oxax.tv/46/index.m3u8?k=1771964983p76i611i451i86S|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&Referer=http://oxax.tv/
-#EXTINF:-1 tvg-name="Red Lips",Red Lips
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referer=http://oxax.tv/
-https://s.oxax.tv/3/index.m3u8?k=1771964983p76i611i451i86S|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&Referer=http://oxax.tv/
-#EXTINF:-1 tvg-name="Hustler HD",Hustler HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referer=http://oxax.tv/
-https://s.oxax.tv/10/index.m3u8?k=1771964983p76i611i451i86S|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&Referer=http://oxax.tv/
-#EXTINF:-1 tvg-name="Private TV",Private TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referer=http://oxax.tv/
-https://s.oxax.tv/11/index.m3u8?k=1771964983p76i611i451i86S|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&Referer=http://oxax.tv/
+#EXTINF:-1,Oh Ah
+https://oxax-proxy.thihazawsatellite.workers.dev/?id=oh-ah
+#EXTINF:-1,Brazzers TV
+https://oxax-proxy.thihazawsatellite.workers.dev/?id=brazzers
+#EXTINF:-1,Private TV
+https://oxax-proxy.thihazawsatellite.workers.dev/?id=private
+#EXTINF:-1,Kino XXX
+https://oxax-proxy.thihazawsatellite.workers.dev/?id=kino
