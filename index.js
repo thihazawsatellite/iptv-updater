@@ -55,11 +55,11 @@ async function scrapeLinks() {
             if (match && match[1]) {
                 const streamLink = "http://oxax.tv/" + match[1];
                 // Player က သိအောင် User-Agent နဲ့ Referer ပါ တစ်ခါတည်း တွဲထည့်မယ်
-                m3uContent += "#EXTINF:-1 tvg-name=\"" + ch.name + "\"," + ch.name + "|http-user-agent=Mozilla/5.0&http-referer=http://oxax.tv/\n" + streamLink + "\n";
+                m3uContent += "#EXTINF:-1 tvg-name=\"" + ch.name + "\"," + ch.name + "\n" + streamLink + "|User-Agent=Mozilla/5.0&Referer=http://oxax.tv/\n";
             }
         } catch (e) { }
     }
     fs.writeFileSync('playlist.m3u', m3uContent);
-    console.log("Updated with headers for video loading!");
+    console.log("Updated with Player Headers!");
 }
 scrapeLinks();
